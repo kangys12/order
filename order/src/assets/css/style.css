@@ -1,0 +1,100 @@
+@charset "utf-8";/*reset*/
+
+html{font-size: 100px;}
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hr,hearder,footer,blockquote,object,iframe,fieldset,input,legend,form,th,td{margin:0;padding:0}
+body,input,textarea,keygen,select,button,isindex{font:16px/1.5 Verdana,Tahoma,"Lucida Grande";color:#333;word-break:break-all;box-sizing: border-box;}
+a{color:#6e6e6e;text-decoration:none;}
+a:hover,a:focus{ outline:none}
+i,b,strong,em,strong{ font-style:normal; font-weight:normal}
+i{display:inline-block;vertical-align:middle}/*i作为图标专用标签*/
+pre{white-space:normal}
+ul,ol,li{list-style:none}
+img{border:none}
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis; word-wrap: normal}
+button:focus{outline: none;}
+
+body{margin-top: 60px;}
+/*首页*/
+.home header{width: 100%; height: 60px;position: fixed;top: 0;left: 0; background-color: darkred;z-index: 10;}
+.home form{margin: 15px 60px 0 20px;}
+.home .input_txt{width: 100%;}
+.home .searchBtn{position: absolute;top: 15px;right: 15px;border: none;background: none;color: #fff;}
+
+.home .main{margin-left: 90px;}
+/*侧边菜单*/
+.home .main aside{position: fixed;top: 60px;left: 0;height: 100%;background: #ddd;width: 80px;}
+.home .main aside nav  li{height: 50px;text-align: center;border-bottom: 1px #ccc solid;line-height: 50px;}
+.home .main aside .ac{background: #fff; color: red;}
+
+
+.home .main .goods_cls h4{height: 40px;line-height: 40px;margin-bottom: 10px;background: #ccc;text-indent: 20px;}
+.home .main .goods_cls dl{padding-left: 80px;position: relative;border-bottom: 1px #ccc solid;margin-bottom: 10px;padding-bottom: 10px;}
+.home .main .goods_cls dl img{width: 65px;height: 65px;position: absolute;top: 0;left: 0px;border-radius:10px}
+.home .main .goods_cls dl .desc{font-size: 12px;color: #999;}
+.home .main .goods_cls dl em{color: red; font-size: 18px;}
+.home .main .goods_cls dl dt{font-weight: bold;}
+.order-btn{width: 40px;height: 25px;position: absolute;bottom: 10px;right: 20px; border: 1px #ccc solid;background: red;color:#fff ;border-radius:20px ;font-size: 12px;}
+.order-btn b{position: absolute;top: 3px;left: 5px;display: none;}
+
+.goods_cls .checked{background: none;}
+.goods_cls .checked span{display: none;}
+
+.goods_cls .checked b{display: inline;color: #666;}
+
+/**/
+
+
+ .ball{width: 20px;height: 20px;position: absolute;background: red;border-radius: 50%;}
+/*.home footer {position: fixed;bottom: 0;left: 0; width: 100%;height: 60px;background: #ccc;}*/ 
+
+/*.showBtn{text-align: center; width: 60px;height: 60px;background: #666;border-radius: 50%;position: absolute;top: -25px;left: 30px;}
+.showBtn img{width: 50px;height: 50px;}
+.pay-btn{border: none; position:absolute;bottom: 0;right: 0;background-color: red;color: #fff;width: 100px;height: 60px;text-align: center;}
+.home .bar em{color: red;height: 60px;line-height: 60px;font-size: 18px;position: absolute;top: 0;left: 140px;}*/
+
+
+
+.footer{ position:fixed; bottom:0; left:0; height:0.5rem; width:100%; z-index:60}
+.footer .f_cont{ background:#EBEBEB; z-index:20; position:relative}
+.footer .f_cont .total{ line-height:0.56rem; text-indent:20px; font-size:0.14rem}
+.footer .f_cont .total em{ font-size:0.22rem; color:#F93336; padding:0 5px}
+.footer .f_cont a{ font-size:0.16rem; height:100%; width:100px; position:absolute; right:0; top:0; background:#f55; color:#fff; text-align:center; line-height:0.5rem}
+
+.footer .f_cont .order_pointer_footer em{ padding-left:80px}
+
+
+/*购物车*/
+.shoping_list{position:absolute;top:0; width:100%; box-sizing:border-box; padding-bottom:0.4rem;}
+
+.shoping_list .empty{ height:0.4rem; background:#fff; border-bottom:2px solid #ccc;}
+.shoping_list .empty span{ position:absolute; top:8px; right:10px; height:30px; width:30px; background: url("../images/del.png"); background-repeat:no-repeat; background-size:cover}
+
+.shoping_list ul{background:#fff; height:228px; overflow:scroll; padding-bottom:0.4rem}
+.shoping_list li{ height:0.55rem; line-height:0.55rem; border-bottom:1px solid #ddd; font-size:0.14rem; position:relative; padding:0 20px;}
+.shoping_list li em{ position:absolute; right:135px; top:3px; font-size:0.16rem}
+.shoping_list li div{position:absolute; right:20px; top:3px; text-align:justify;}
+.shoping_list li div button{height:20px; width:30px; border-radius:10px; line-height:20px; vertical-align:-2px; background-size:50%; background-repeat:no-repeat; background-position:center}
+.shoping_list li div button:first-of-type{ background-image:url("../images/sub.png"); background-color:#ccc}
+.shoping_list li div button:last-of-type{ background-image:url("../images/add.png"); background-color:#f55}
+.shoping_list li div span{ padding:0 10px; display:inline-block; width:20px; text-align:center; font-size:0.16rem}
+
+.shoping_list .shoppingBtn{ position:absolute;top:-22px; left:25px; width:60px; height:60px; background-color:#666; border-radius:50%; z-index:30; background-image:url("../images/glass_close.png"); background-size:70%; background-repeat:no-repeat; background-position:center 7px}
+.shoping_list .count{position:absolute;height:20px; width:20px; line-height:20px; border:2px solid #fff; border-radius:50%; background:#f55; border:2px solid #fff; color:#fff; text-align:center; font-size:0.13rem;  top:-30px; left:62px; z-index:40;}
+/*动画*/
+.shoping_list_slide{top:-280px;}
+.shoping_list_slide .shoppingBtn{background-image:url("../images/glass_open.png"); top:-45px;}
+.shoping_list_slide .count{top:-57px;}
+
+
+/*模态层*/
+.home .modal{position:fixed;top:0;left:0; height:100%; width:100%; z-index:40; background:#000; opacity:.4}
+
+/*pay---------------------------------------------------------------------------*/
+.pay{ position: fixed; top:0; left:0; width: 100%; z-index: 50; background: #fff;  padding:100px 30px; box-sizing: border-box;font-size: 20px;}
+.pay h2{ margin-bottom: 30px;font-size: 30px; color:#000; text-align: center;}
+.pay h3{ margin-bottom: 30px;font-size:20px;}
+.pay .orderNum{ margin-bottom: 30px;font-size:40px; color: red;}
+.pay button{ width: 100%; height: 60px; background: red; border-radius: 10px; color: #fff;font-size:20px;}
+.pay .payBtn{ background: red;}
+.pay .backBtn{ background:#ccc; margin-top: 30px;}
+.hide{display: none;}
